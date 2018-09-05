@@ -4,7 +4,7 @@
   "description": "IOTA for Sigfox network",
   "scripts": {
     "start": "node build/main.js",
-    "build": "tsc",
+    "build": "tsc && cp src/lua ./build -R",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +22,12 @@
     "@types/express": "^4.11.1"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/redis": "^2.8.6",
+    "axios": "^0.18.0",
     "dojot-iotagent": "https://github.com/dojot/iotagent-nodejs",
     "express": "^4.16.2",
+    "redis": "^2.8.0",
     "tsconfig": "^7.0.0",
     "typescript": "^2.5.3"
   }
