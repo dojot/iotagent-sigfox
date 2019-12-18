@@ -1,11 +1,11 @@
-FROM node:8
+FROM node:8.14.0-alpine
 
 WORKDIR /opt/iotagent-sigfox
-#RUN apt-get update \
-#    && apt-get install -y python-pip \
-#    &&  pip install pyopenssl
+
+RUN apk add --no-cache git python make bash gcc g++ zeromq-dev musl-dev zlib-dev krb5-dev
 
 COPY . .
+
 RUN npm install && npm run-script build
 
 RUN chmod +x entrypoint.sh
@@ -13,3 +13,5 @@ RUN chmod +x entrypoint.sh
 EXPOSE 80
 
 ENTRYPOINT ["./entrypoint.sh"]
+
+
