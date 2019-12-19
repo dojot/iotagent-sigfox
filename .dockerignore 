@@ -1,0 +1,15 @@
+# Binaries
+build
+
+# NodeJS
+node_modules
+package-lock.json
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Github
+.git
+.github
+.gitignore
