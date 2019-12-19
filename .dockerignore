@@ -3,6 +3,7 @@ build
 
 # NodeJS
 node_modules
+package-lock.json
 
 # Docker
 .dockerignore
