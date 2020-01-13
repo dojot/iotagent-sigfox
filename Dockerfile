@@ -2,7 +2,7 @@ FROM node:8.14.0-alpine
 
 WORKDIR /opt/iotagent-sigfox
 
-RUN apk add --no-cache git python make bash gcc g++ zeromq-dev musl-dev zlib-dev krb5-dev
+RUN apk add --no-cache git python make bash gcc g++ zeromq-dev musl-dev zlib-dev krb5-dev python-pip &&  pip install pyopenssl
 
 COPY . .
 
