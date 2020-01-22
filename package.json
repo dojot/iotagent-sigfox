@@ -7,22 +7,13 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tprimini/iotagent-sigfox.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tprimini/iotagent-sigfox/issues"
-  },
   "homepage": "https://github.com/tprimini/iotagent-sigfox#readme",
   "devDependencies": {
-    "@types/dojot-iotagent": "https://github.com/dojot/iotagent-nodejs",
+    "@types/dojot-iotagent": "https://github.com/dojot/iotagent-nodejs#76129040bd11d1ba2e1e3ce62ed7adc229b7d74a",
     "@types/express": "^4.11.1"
   },
   "dependencies": {
-    "dojot-iotagent": "https://github.com/dojot/iotagent-nodejs",
+    "dojot-iotagent": "https://github.com/dojot/iotagent-nodejs#76129040bd11d1ba2e1e3ce62ed7adc229b7d74a",
     "express": "^4.16.2",
     "tsconfig": "^7.0.0",
     "typescript": "^2.5.3"
